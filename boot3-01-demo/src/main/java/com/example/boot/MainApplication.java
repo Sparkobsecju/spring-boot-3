@@ -1,5 +1,6 @@
 package com.example.boot;
 
+import com.example.boot.bean.Person;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -32,5 +33,8 @@ public class MainApplication {
         for (String name: names) {
             System.out.println(name);
         }
+
+        Person person = ioc.getBean(Person.class);
+        System.out.println("person: " + person);
     }
 }
