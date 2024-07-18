@@ -5,11 +5,11 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/boot3-01-demo/pom.xml" />
-        <option value="$PROJECT_DIR$/boo3-02-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/boot3-02-demo/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="21" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

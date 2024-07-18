@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>org.example.boot</groupId>
-    <artifactId>boo3-02-demo</artifactId>
+    <artifactId>boot3-02-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>boo3-02-demo</name>
+    <name>boot3-02-demo</name>
     <description>boo3-02-demo</description>
     <url/>
     <licenses>
