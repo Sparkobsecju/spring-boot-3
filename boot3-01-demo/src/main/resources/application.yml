@@ -14,3 +14,27 @@ spring:
       port: 6379
 #  datasource:
 #    url: aaaa
+
+person:
+  name: 小毛
+  age: 38
+  birthDay: 1986/12/12 12:12:12
+  like: true
+  child:
+    name: 小花
+    age: 12
+    birthDay: 2012/12/12 12:12:12
+    text:
+      - abc
+      - def
+  dogs:
+    - name: 小黑
+      age: 3
+    - name: 小白
+      age: 2
+  cats:
+    c1:
+      name: 小藍
+      age: 3
+    c2: {name: 小灰, age: 2} # 物件也可用 {} 表示
+#    text: ["abc", "def"]

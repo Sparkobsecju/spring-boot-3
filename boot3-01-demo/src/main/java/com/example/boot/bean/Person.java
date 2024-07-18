@@ -18,7 +18,7 @@ import java.util.Map;
 public class Person {
     private String name;
     private Integer age;
-    private Date birthday;
+    private Date birthDay;
     private Boolean like;
     private Child child; // 聚合物件
     private List<Dog> dogs; // 串列屬性 (裡面是物件)
