@@ -4,13 +4,12 @@ package org.example.boot;
 import org.example.boot.bean.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
-public class Boo302DemoApplication {
+public class Boot302DemoApplication {
 
     public static void main(String[] args) {
-        var ioc = SpringApplication.run(Boo302DemoApplication.class, args);
+        var ioc = SpringApplication.run(Boot302DemoApplication.class, args);
 
 //        for (String name: ioc.getBeanDefinitionNames()) {
 //            System.out.println(name);
