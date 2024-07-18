@@ -1,6 +1,7 @@
 #1. k: v # k v 之間 是空格區分
 #2. 屬性有層級關係，使用下一行，空兩個空格
 #3. 左側對齊的屬性，表示同一層級
+---
 server:
   port: 9999
 
@@ -14,19 +15,37 @@ spring:
       port: 6379
 #  datasource:
 #    url: aaaa
-
+--- # 下面是另一個單獨文件
+a: b
 person:
-  name: 小毛
+  name: '小毛 \n 123'     #單引號內功能不會被轉譯
   age: 38
   birthDay: 1986/12/12 12:12:12
   like: true
   child:
-    name: 小花
+    name: "小花 \n 456"  #雙引號內會轉譯
     age: 12
     birthDay: 2012/12/12 12:12:12
     text:
       - abc
       - def
+      - | # | 開頭表示多行字串，從下行開始，保留文本格式，換行符號會正常顯示
+        dogs:
+          - name: 小黑
+            age: 3
+          - name: 小白
+            age: 2
+      - > # > 開頭表示多行字串，從下行開始，將換行符號去除
+        江山風月
+        本無常主
+        但少閑人如吾兩人者
+      - |
+        蘇：
+          八風吹不動
+          端坐紫金蓮
+        佛：
+          放屁
+
   dogs:
     - name: 小黑
       age: 3
@@ -37,4 +56,5 @@ person:
       name: 小藍
       age: 3
     c2: {name: 小灰, age: 2} # 物件也可用 {} 表示
+
 #    text: ["abc", "def"]

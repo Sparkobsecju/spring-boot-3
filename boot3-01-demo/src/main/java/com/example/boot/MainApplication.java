@@ -36,5 +36,14 @@ public class MainApplication {
 
         Person person = ioc.getBean(Person.class);
         System.out.println("person: " + person);
+        System.out.println("=====用 | 表示文本，會保留格式========");
+        String s1 = person.getChild().getText().get(2);
+        System.out.println(s1);
+        System.out.println("=====用 > 表示文本，會壓縮換行變成空格========");
+        var s2 = person.getChild().getText().get(3);
+        System.out.println(s2);
+        var s3 = person.getChild().getText().get(4);
+        System.out.println("=====用 | 表示文本，會保留格式========");
+        System.out.println(s3);
     }
 }
